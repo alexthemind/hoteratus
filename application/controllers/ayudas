@@ -1,0 +1,41 @@
+
+ayudas tipos de alertas
+<div class="alert alert-success">
+  <a href="#" class="alert-link">...</a>
+</div>
+ 
+<div class="alert alert-info">
+  <a href="#" class="alert-link">...</a>
+</div>
+ 
+<div class="alert alert-warning">
+  <a href="#" class="alert-link">...</a>
+</div>
+ 
+<div class="alert alert-danger">
+  <a href="#" class="alert-link">...</a>
+</div>
+
+zona de horario para ejecutar procesos
+
+select convert_tz(now(),'+01:00','+04:00')
+
+
+CREATE TABLE `kardex` (
+  `kardexid` INT NOT NULL AUTO_INCREMENT,
+  `itemid` INT NULL,
+  `orderid` INT NULL,
+  `isitem` INT NULL,
+  `type` INT NULL,
+  `datetimemove` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`kardexid`));
+
+
+ALTER TABLE `dev20_eagle2`.`kardex` 
+ADD COLUMN `qty` FLOAT NULL AFTER `orderid`;
+
+
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+
+LA conexion de despagar y airbnb no tiene asignacion de numero de habiatacion deben tenerlos todos buscar nuevo diseño para esto mas rapido y facil
